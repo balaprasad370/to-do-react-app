@@ -8,7 +8,7 @@ import About from './components/page/About'
 import axios from 'axios';
 
 import './App.css';
-import Axios from 'axios';
+
 
 class App extends Component {
   state = {
@@ -16,7 +16,7 @@ class App extends Component {
   }
 
   componentDidMount() {
-    axios.get('https://jsonplaceholder.typicode.com/todos?_limit=10') .then(res => this.setState({ todos: res.data}))
+    axios.get('https://jsonplaceholder.typicode.com/todos?_limit=10').then(res => this.setState({ todos: res.data}))
   }
 
   markComplete = (id) => {
